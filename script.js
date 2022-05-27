@@ -65,41 +65,6 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
 
-//＝＝＝＝＝＝＝＝＝＝
-//背景画像遷移ここから
-//＝＝＝＝＝＝＝＝＝＝
-
-$(function () {
-	let target = $(".profile").offset().top;
-	let target2 = $(".skill").offset().top;
-	let target3 = $(".works").offset().top;
-
-	$(window).on("scroll", function () {
-		let currentPos = $(window).scrollTop() + (window.innerHeight/2);
-		if (currentPos > target && target2 > currentPos) {
-			$(".skill-bg").removeClass('skillon'),
-			$(".pro-bg").addClass('profileon')
-		}
-		 else if(currentPos > target2 &&  target3 > currentPos){
-			$(".pro-bg").removeClass('profileon')
-			$(".works-bg").removeClass('workson'),
-			$(".skill-bg").addClass('skillon')
-		}
-		else if(currentPos > target3){
-			$(".skill-bg").removeClass('skillon'),
-			$(".works-bg").addClass('workson')
-		}
-		else {
-			$(".pro-bg").removeClass('profileon'),
-			$(".skill-bg").removeClass('skillon')
-			$(".works-bg").removeClass('workson')
-				}
-	});
-});
-
-//＝＝＝＝＝＝＝＝＝＝
-//背景画像遷移ここから
-//＝＝＝＝＝＝＝＝＝＝
 
 function scroll_effect() {
 	var element = document.getElementsByClassName('scroll-up');
@@ -116,4 +81,10 @@ function scroll_effect() {
 	  }
 	}
   }
+
   window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+
+  $('.view-in').on('inview', function() {
+	//ブラウザの表示域に表示されたときに実行する処理
+	$(this).addClass('is-show');
+});

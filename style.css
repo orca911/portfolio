@@ -9,7 +9,6 @@ html {
 body {
     font-size: 100%;
     color: #999;
-    font-family: 'Nothing You Could Do', cursive;
 }
 
 .pro-bg,
@@ -91,6 +90,7 @@ h2 {
     width: max-content;
     margin: 0 auto 30px;
     border-bottom: #0481A2 solid 5px;
+    font-family: 'Nothing You Could Do', cursive;
 }
 
 h3 {
@@ -302,6 +302,7 @@ section {
 #g-nav.panelactive {
     opacity: 1;
     z-index: 999;
+    font-family: 'Nothing You Could Do', cursive;
 }
 
 /*ナビゲーションの縦スクロール*/
@@ -375,9 +376,30 @@ profile
     margin-bottom: 50px;
 }
 
-.profile-text h3 {
+.profile-name{
+    font-size: 2rem;
     margin-bottom: 20px;
 }
+
+.profile-name span{
+    font-size: 1.25rem;
+    margin-left: 5px;
+}
+
+.profile-text{
+    line-height: 2.0;
+    margin-bottom: 50px;
+}
+
+.profile-title {
+    margin-bottom: 20px;
+}
+
+.profile-list dd{
+    text-indent: 1rem;
+}
+
+
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝
 skill
@@ -487,4 +509,28 @@ skill
 .bgCW a:hover span.cap {
     /*hoverした時の変化*/
     opacity: 1;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝contact＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
+
+.contact{
+    text-align: center;
+}
+
+.contact p{
+    margin-bottom: 40px;
+}
+
+.contact address{
+    font-size: 1.25rem;
+}
+
+footer{
+    background: #0481A2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer small{
+    color: #fff;
 }
