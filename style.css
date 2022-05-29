@@ -346,7 +346,6 @@ profile
 
 .profile-list dd{
     font-size: clamp(14px,3.6vw,20px);
-    line-height: 2.0;
     padding-left: 1rem;
     margin-bottom: 15px;
 }
