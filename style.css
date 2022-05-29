@@ -11,59 +11,6 @@ body {
     color: #999;
 }
 
-.pro-bg,
-.skill-bg,
-.works-bg {
-    opacity: 0;
-    transition: opacity 2s ease;
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    z-index: -1; 
-}
-
-.pro-bg{
-    background-image: url(images/sectitle_profile.jpg);
-    background-position: left 10% center;
-}
-
-.skill-bg{
-    background-image: url(images/sectitle_skill.png);
-    background-position: right 10% center;
-}
-
-.works-bg{
-    background-image: url(images/sectitle_works.png);
-    background-position: left 10% center;
-}
-
-.pro-bg.profileon {
-    opacity: 1;
-}
-
-.skill-bg.skillon {
-    opacity: 1;
-}
-
-.works-bg.workson {
-    opacity: 1;
-}
-
-
-@keyframes fadeInAnime {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 
 img {
     max-width: 100%;
@@ -376,7 +323,8 @@ profile
     margin-bottom: 50px;
 }
 
-.profile-name{
+.profile-name,
+.profile-title{
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -387,20 +335,26 @@ profile
 }
 
 .profile-text{
+    font-size: clamp(14px,3.6vw,20px);
     line-height: 2.0;
+    margin-bottom: 30px;
+}
+
+.profile-text:last-of-type{
     margin-bottom: 50px;
 }
 
-.profile-title {
-    margin-bottom: 20px;
+.profile-list dd{
+    font-size: clamp(14px,3.6vw,20px);
+    line-height: 2.0;
+    padding-left: 1rem;
+    margin-bottom: 15px;
 }
 
-.profile-list dd{
+.profile-list dd span{
+    display: inline-block;
     text-indent: 1rem;
 }
-
-
-
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝
 skill
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
