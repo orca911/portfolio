@@ -107,7 +107,7 @@ function scroll_effect() {
 
 
 var swiper = new Swiper(".mySwiper", {
-  effect: "flip",
+  effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
