@@ -33,6 +33,8 @@ $(function () {
 	});
 });
 
+
+
 //＝＝＝＝＝＝＝＝＝＝
 //header出現ここから
 //＝＝＝＝＝＝＝＝＝＝
@@ -51,6 +53,8 @@ $(function () {
 	});
 });
 
+
+
 //＝＝＝＝＝＝＝＝＝＝
 //ハンバーガーここから
 //＝＝＝＝＝＝＝＝＝＝
@@ -64,6 +68,13 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
+
+
+
+
+//＝＝＝＝＝＝＝＝＝＝
+//スクロールここから
+//＝＝＝＝＝＝＝＝＝＝
 
 
 function scroll_effect() {
@@ -87,4 +98,27 @@ function scroll_effect() {
   $('.view-in').on('inview', function() {
 	//ブラウザの表示域に表示されたときに実行する処理
 	$(this).addClass('is-show');
+});
+
+
+//＝＝＝＝＝＝＝＝＝＝
+//swiperここから
+//＝＝＝＝＝＝＝＝＝＝
+
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+	rotate: 50,
+	stretch: 0,
+	depth: 100,
+	modifier: 1,
+	slideShadows: true,
+  },
+  pagination: {
+	el: ".swiper-pagination",
+  },
 });

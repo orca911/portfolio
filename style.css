@@ -151,6 +151,179 @@ section {
     /*X方向にスケール拡大*/
 }
 
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝ファーストビューvegas＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
+
+.vegas-slider {
+    min-height: 100vh;
+    background-size: cover;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 6rem;
+    color: #fff;
+}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝
+profile
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
+
+.profile-img {
+    margin-bottom: 50px;
+}
+
+.profile-name,
+.profile-title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-name span{
+    font-size: 1.25rem;
+    margin-left: 5px;
+}
+
+.profile-text{
+    font-size: clamp(14px,3.6vw,20px);
+    line-height: 2.0;
+    margin-bottom: 30px;
+}
+
+.profile-text:last-of-type{
+    margin-bottom: 50px;
+}
+
+.profile-list dd{
+    font-size: clamp(14px,3.6vw,20px);
+    padding-left: 1rem;
+    margin-bottom: 15px;
+}
+
+.profile-list dd span{
+    display: inline-block;
+    text-indent: 1rem;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝
+skill
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
+
+
+.skill__code,
+.skill__design {
+    margin-bottom: 50px;
+}
+
+.skill__about figure{
+    margin-bottom: 50px;
+}
+
+.skill-img{
+    margin-bottom: 20px;
+}
+
+.skill-text{
+    font-size: clamp(14px,3.6vw,20px);
+}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝works＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
+
+.flexitems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.flexitems figure {
+    width: 45%;
+    height: auto;
+}
+
+
+/* 背景が中央から横に出現＋テキスト */
+
+
+.bgCW {
+    position: relative;
+    /*テキストの基点となる位置を定義*/
+}
+
+.bgCW span.mask {
+    position: relative;
+    /*背景色の基点となる位置を定義*/
+    display: block;
+    line-height: 0;
+    /*行の高さを0にする*/
+    overflow: hidden;
+    /*拡大してはみ出る要素を隠す*/
+}
+
+.bgCW span.mask::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    background: #333;
+    /*背景色*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    /*移り変わる速さを変更したい場合はこの数値を変更*/
+    transform: scale(0, 1);
+    transform-origin: center;
+}
+
+.bgCW span.mask:hover::before {
+    /*hoverした時の変化*/
+    transform: scale(1, 1);
+}
+
+.bgCW span.cap {
+    opacity: 0;
+    transition: .5s ease-in-out;
+    /*移り変わる速さを変更したい場合はこの数値を変更*/
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+.bgCW a:hover span.cap {
+    /*hoverした時の変化*/
+    opacity: 1;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝contact＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
+
+.contact{
+    text-align: center;
+}
+
+.contact p{
+    margin-bottom: 40px;
+}
+
+.contact address{
+    font-size: 1.25rem;
+}
+
+footer{
+    background: #0481A2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer small{
+    color: #fff;
+}
+
 /* =================================ハンバーガーアイコン==================================== */
 .openbtn {
     /*ボタン内側の基点となるためrelativeを指定。
@@ -295,195 +468,4 @@ section {
     font-weight: bold;
     position: relative;
     /* 下線表示のため*/
-}
-
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝ファーストビューvegas＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
-
-.vegas-slider {
-    min-height: 100vh;
-    background-size: cover;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bg-title {
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 6rem;
-    color: #fff;
-}
-
-
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝
-profile
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
-
-.profile-img {
-    margin-bottom: 50px;
-}
-
-.profile-name,
-.profile-title{
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.profile-name span{
-    font-size: 1.25rem;
-    margin-left: 5px;
-}
-
-.profile-text{
-    font-size: clamp(14px,3.6vw,20px);
-    line-height: 2.0;
-    margin-bottom: 30px;
-}
-
-.profile-text:last-of-type{
-    margin-bottom: 50px;
-}
-
-.profile-list dd{
-    font-size: clamp(14px,3.6vw,20px);
-    padding-left: 1rem;
-    margin-bottom: 15px;
-}
-
-.profile-list dd span{
-    display: inline-block;
-    text-indent: 1rem;
-}
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝
-skill
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
-
-
-.skill__code,
-.skill__design {
-    margin-bottom: 50px;
-}
-
-.skill__about p {
-    margin: 20px 0;
-}
-
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝skill coding＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
-
-
-
-.gray {
-    filter: grayscale(100%);
-    /*モノクロ具合を変更したい場合はこの数値を変更*/
-    transition: .3s ease-in-out;
-    /*移り変わる速さを変更したい場合はこの数値を変更*/
-}
-
-.gray:hover {
-    filter: grayscale(0);
-}
-
-.sepia {
-    filter: sepia(0);
-    /*セピア具合を変更したい場合はこの数値を変更*/
-    transition: .3s ease-in-out;
-    /*移り変わる速さを変更したい場合はこの数値を変更*/
-}
-
-.sepia:hover {
-    filter: sepia(100%);
-}
-
-
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝works＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
-
-.flexitems {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-}
-
-.flexitems figure {
-    width: 45%;
-    height: auto;
-}
-
-
-/* 背景が中央から横に出現＋テキスト */
-
-
-.bgCW {
-    position: relative;
-    /*テキストの基点となる位置を定義*/
-}
-
-.bgCW span.mask {
-    position: relative;
-    /*背景色の基点となる位置を定義*/
-    display: block;
-    line-height: 0;
-    /*行の高さを0にする*/
-    overflow: hidden;
-    /*拡大してはみ出る要素を隠す*/
-}
-
-.bgCW span.mask::before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    background: #333;
-    /*背景色*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: transform .3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
-    /*移り変わる速さを変更したい場合はこの数値を変更*/
-    transform: scale(0, 1);
-    transform-origin: center;
-}
-
-.bgCW span.mask:hover::before {
-    /*hoverした時の変化*/
-    transform: scale(1, 1);
-}
-
-.bgCW span.cap {
-    opacity: 0;
-    transition: .5s ease-in-out;
-    /*移り変わる速さを変更したい場合はこの数値を変更*/
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-}
-
-.bgCW a:hover span.cap {
-    /*hoverした時の変化*/
-    opacity: 1;
-}
-
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝contact＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
-
-.contact{
-    text-align: center;
-}
-
-.contact p{
-    margin-bottom: 40px;
-}
-
-.contact address{
-    font-size: 1.25rem;
-}
-
-footer{
-    background: #0481A2;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer small{
-    color: #fff;
 }
