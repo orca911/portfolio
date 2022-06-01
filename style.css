@@ -214,6 +214,7 @@ skill
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
 
 
+
 .skill__code,
 .skill__design {
     margin-bottom: 50px;
@@ -225,6 +226,9 @@ skill
     border: 2px solid #0481A2;
     border-radius: 30px;
     width: 90%;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
 }
 
 .skill-img{
