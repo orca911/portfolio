@@ -165,7 +165,7 @@ section {
 
 .bg-title {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: min(20vw, 6rem);
+    font-size: min(20vw, 96px);
     color: #fff;
 }
 
@@ -216,14 +216,14 @@ skill
 
 
 .skill__code,
-.skill__design {
+.skill__design,
+.skill__office {
     margin-bottom: 50px;
 }
 
-/* ＝＝＝＝＝＝＝＝＝＝＝＝＝coding＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
-
 .code-item,
-.design-item{
+.design-item,
+.office-item{
     margin-bottom: 50px;
     text-align: center;
     border: 2px solid #0481A2;
@@ -235,14 +235,22 @@ skill
 }
 
 .code-img,
-.design-img{
-    margin-bottom: 20px;
+.design-img,
+.office-img{
+    margin-bottom: 30px;
     padding-top: 20px;
     width: 60%;
 }
 
+.code-title,
+.design-title,
+.office-title{
+    margin-bottom: 5px;
+}
+
 .code-text,
-.design-text{
+.design-text,
+.office-text{
     font-size: clamp(14px,3.6vw,20px);
     padding: 0 10px;
     margin-bottom: 10px;
