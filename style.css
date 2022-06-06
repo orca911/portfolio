@@ -32,10 +32,11 @@ h1 {
     font-family: 'Nothing You Could Do', cursive;
 }
 
-h2 {
+.sec-title {
     font-size: 3rem;
     width: max-content;
     margin: 0 auto 50px;
+    padding-top: 60px;
     border-bottom: #0481A2 solid 5px;
     font-family: 'Nothing You Could Do', cursive;
 }
@@ -47,7 +48,7 @@ h3 {
 }
 
 section {
-    margin-bottom: 100px !important;
+    margin-bottom: 50px;
 }
 
 .wrapper {
@@ -79,7 +80,7 @@ section {
     width: 100%;
     position: fixed;
     z-index: 500;
-    background-color: rgba(240, 248, 255, .7);
+    /* background-color: rgba(240, 248, 255, .7); */
 }
 
 .header.active {
