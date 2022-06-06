@@ -52,7 +52,6 @@ section {
 }
 
 .wrapper {
-    max-width: 1400px;
     width: 80%;
     margin: 0 auto;
 }
@@ -176,7 +175,9 @@ profile
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
 
 .profile-img {
-    margin-bottom: 50px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 50px;
 }
 
 .profile-name,
@@ -209,6 +210,25 @@ profile
 .profile-list dd span{
     display: inline-block;
     text-indent: 1rem;
+}
+
+@media (min-width: 1025px) {
+    .profile-flex{
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        margin-bottom: 50px;
+    }
+
+    .profile-img {
+        margin: 0 auto;
+        min-width: 400px;
+    }
+
+    .profile-text:last-of-type{
+        margin-bottom: 0;
+    }
+    
 }
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝
 skill
@@ -436,6 +456,7 @@ footer small{
     text-decoration: none;
     padding: 10px;
     display: block;
+    font-size: clamp(16px,2vw,24px);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: bold;
