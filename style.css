@@ -56,6 +56,12 @@ section {
     margin: 0 auto;
 }
 
+@media (min-width: 1025px) {
+    .wrapper{
+        width: 90%;
+    }
+}
+
 /* ========================スクロールアップ========================== */
 .scroll-up {
     opacity: 0; 
@@ -192,7 +198,7 @@ profile
 }
 
 .profile-text{
-    font-size: clamp(14px,3.6vw,20px);
+    font-size: clamp(14px,3.6vw,18px);
     line-height: 2.0;
     margin-bottom: 30px;
 }
@@ -202,7 +208,7 @@ profile
 }
 
 .profile-list dd{
-    font-size: clamp(14px,3.6vw,20px);
+    font-size: clamp(14px,3.6vw,18px);
     padding-left: 1rem;
     margin-bottom: 15px;
 }
@@ -223,10 +229,6 @@ profile
     .profile-img {
         margin: 0 auto;
         min-width: 400px;
-    }
-
-    .profile-text:last-of-type{
-        margin-bottom: 0;
     }
     
 }
