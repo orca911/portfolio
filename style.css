@@ -269,10 +269,10 @@ skill
     justify-content: center;
 }
 
-.flexitems figure {
+/* .flexitems figure {
     width: 45%;
     height: auto;
-}
+} */
 
 
 /* 背景が中央から横に出現＋テキスト */
