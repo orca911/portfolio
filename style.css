@@ -47,6 +47,10 @@ h3 {
     margin-bottom: 30px;
 }
 
+h4{
+    font-size: clamp(14px, 3.6vw, 24px);
+}
+
 section {
     margin-bottom: 50px;
 }
@@ -56,24 +60,25 @@ section {
     margin: 0 auto;
 }
 
-@media (min-width: 1025px) {
-    .wrapper{
+@media (min-width: 601px) {
+    .wrapper {
         width: 90%;
     }
 }
 
 /* ========================スクロールアップ========================== */
 .scroll-up {
-    opacity: 0; 
+    opacity: 0;
     visibility: hidden;
     transform: translateY(50px);
     transition: all 1s;
-  }
-  .scroll-up.is-show {
+}
+
+.scroll-up.is-show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
-  }
+}
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝header＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
 .header {
@@ -181,62 +186,63 @@ profile
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
 
 .profile-img {
-    text-align: center;
     max-width: 500px;
     margin: 0 auto 50px;
 }
 
 .profile-name,
-.profile-title{
+.profile-title {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.profile-name span{
+.profile-name span {
     font-size: 1.25rem;
     margin-left: 5px;
 }
 
-.profile-text{
-    font-size: clamp(14px,3.6vw,18px);
+.profile-text {
+    font-size: clamp(14px, 3.6vw, 18px);
     line-height: 2.0;
     margin-bottom: 30px;
 }
 
-.profile-text:last-of-type{
+.profile-text:last-of-type {
     margin-bottom: 50px;
 }
 
-.profile-list dd{
-    font-size: clamp(14px,3.6vw,18px);
+.profile-list dd {
+    font-size: clamp(14px, 3.6vw, 18px);
     padding-left: 1rem;
     margin-bottom: 15px;
 }
 
-.profile-list dd span{
+.profile-list dd span {
     display: inline-block;
     text-indent: 1rem;
 }
 
+
 @media (min-width: 1025px) {
-    .profile-flex{
+    .profile-flex {
         display: flex;
         align-items: center;
         gap: 5%;
         margin-bottom: 50px;
     }
 
-    .profile-img {
-        margin: 0 auto;
-        min-width: 400px;
+    .profile-textbox {
+        width: 50%;
     }
-    
+
+    .profile-img {
+        margin: 0 0 0 auto;
+    }
 }
+
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝
 skill
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
-
-
 
 .skill__code,
 .skill__design,
@@ -246,20 +252,18 @@ skill
 
 .code-item,
 .design-item,
-.office-item{
+.office-item {
     margin-bottom: 50px;
     text-align: center;
     border: 2px solid #0481A2;
     border-radius: 30px;
     width: 90%;
     background-color: #fff;
-    background-position: center;
-    background-size: cover;
 }
 
 .code-img,
 .design-img,
-.office-img{
+.office-img {
     margin-bottom: 30px;
     padding-top: 20px;
     width: 60%;
@@ -267,16 +271,54 @@ skill
 
 .code-title,
 .design-title,
-.office-title{
+.office-title {
     margin-bottom: 5px;
 }
 
 .code-text,
 .design-text,
-.office-text{
-    font-size: clamp(14px,3.6vw,20px);
+.office-text {
+    font-size: clamp(14px, 2vw, 20px);
     padding: 0 10px;
     margin-bottom: 10px;
+}
+
+.pc {
+    display: none;
+}
+
+@media (min-width: 601px) {
+    .sp {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .code-block,
+    .design-block,
+    .office-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .code-item,
+    .design-item,
+    .office-item {
+        width: 45%;
+    }
+}
+
+@media (min-width: 601px) {
+
+    .code-item,
+    .design-item,
+    .office-item {
+        width: 20%;
+    }
 }
 
 
@@ -297,25 +339,25 @@ skill
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝contact＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
 
-.contact{
+.contact {
     text-align: center;
 }
 
-.contact p{
+.contact p {
     margin-bottom: 40px;
 }
 
-.contact address{
+.contact address {
     font-size: 1.25rem;
 }
 
-footer{
+footer {
     background: #0481A2;
     text-align: center;
     padding: 10px 0;
 }
 
-footer small{
+footer small {
     color: #fff;
 }
 
@@ -458,7 +500,7 @@ footer small{
     text-decoration: none;
     padding: 10px;
     display: block;
-    font-size: clamp(16px,2vw,24px);
+    font-size: clamp(16px, 2vw, 24px);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: bold;
