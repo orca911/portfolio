@@ -6,7 +6,7 @@
 
 
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
-		if (windowwidth > 768){
+		if (windowwidth > 1025){
 			var responsiveImage = [//PC用の画像
 				{ src: 'images/pc-vegas/main1.jpg'},
 				{ src: 'images/pc-vegas/neko.jpg'},
@@ -14,7 +14,7 @@ var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0
 				{ src: 'images/pc-vegas/matu.jpg'}
 			];
 		} else {
-			var responsiveImage = [//600px以下用の画像
+			var responsiveImage = [//1025px以下用の画像
 				{ src: 'images/sp-vegas/SPmain1.jpg'},
 				{ src: 'images/sp-vegas/SPmain2.jpg'},
 				{ src: 'images/sp-vegas/SPmain3.jpg'}
