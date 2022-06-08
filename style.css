@@ -187,8 +187,22 @@ profile
 
 .profile-img {
     max-width: 500px;
-    margin: 0 auto 50px;
+    margin: 0 auto 100px;
+    position: relative;
 }
+
+.profile-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 8px;
+    box-shadow: 0 40px 15px rgba(0, 0, 0, .5);
+    background-color: transparent;
+    border-radius: 80px / 4px;
+  }
 
 .profile-name,
 .profile-title {
@@ -244,6 +258,10 @@ profile
 skill
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
 
+.swiper{
+    padding: 4px;
+}
+
 .skill__code,
 .skill__design,
 .skill__office {
@@ -255,10 +273,10 @@ skill
 .office-item {
     margin-bottom: 50px;
     text-align: center;
-    border: 2px solid #0481A2;
+    /* border: 2px solid #0481A2; */
+    box-shadow: 2px 2px 4px grey;
     border-radius: 30px;
     width: 90%;
-    background-color: #fff;
 }
 
 .code-img,
@@ -312,7 +330,7 @@ skill
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 1025px) {
 
     .code-item,
     .design-item,

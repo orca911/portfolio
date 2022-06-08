@@ -111,7 +111,7 @@ var swiper = new Swiper(".mySwiper", {
   loop:"true",
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: "1",
   loopedSlides: null,
   coverflowEffect: {
 	rotate: 50,
