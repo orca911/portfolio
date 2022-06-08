@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "游ゴシック Medium", "Yu Gothic Medium", sans-serif;
     font-size: 100%;
     color: #666;
 }
@@ -37,8 +38,9 @@ h1 {
     width: max-content;
     margin: 0 auto 50px;
     padding-top: 60px;
+    color: #0481A2;
     border-bottom: #0481A2 solid 5px;
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Nothing You Could Do', cursive;;
 }
 
 h3 {
@@ -191,6 +193,10 @@ profile
     position: relative;
 }
 
+.profile-img img{
+    border-radius: 50px;
+}
+
 .profile-img::after {
     content: "";
     position: absolute;
@@ -208,6 +214,7 @@ profile
 .profile-title {
     font-size: 2rem;
     margin-bottom: 20px;
+    border-bottom: 3px solid;
 }
 
 .profile-name span {
@@ -274,7 +281,7 @@ skill
     margin-bottom: 50px;
     text-align: center;
     /* border: 2px solid #0481A2; */
-    box-shadow: 2px 2px 4px grey;
+    box-shadow: 2px 2px 4px #0481A2;
     border-radius: 30px;
     width: 90%;
 }
