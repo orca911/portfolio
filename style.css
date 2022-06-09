@@ -293,6 +293,7 @@ skill
 .swiper{
     padding: 4px;
     width: 100%;
+    overflow: hidden;
 }
 
 .skill__code,
