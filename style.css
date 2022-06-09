@@ -65,6 +65,10 @@ section {
     .wrapper {
         width: 90%;
     }
+
+    section {
+        margin-bottom: 100px;
+    }
 }
 
 /* ========================スクロールアップ========================== */
@@ -221,14 +225,18 @@ profile
     margin-left: 5px;
 }
 
+.profile-textbox{
+    margin-bottom: 50px;
+}
+
 .profile-text {
     font-size: clamp(14px, 3.6vw, 18px);
     line-height: 2.0;
     margin-bottom: 30px;
 }
 
-.profile-text:last-of-type {
-    margin-bottom: 50px;
+.margin {
+    margin-bottom: 40px;
 }
 
 .profile-list dd {
@@ -242,6 +250,11 @@ profile
     text-indent: 1rem;
 }
 
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝favorite＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
+
+.favorite-items{
+    text-align: center;
+}
 
 @media (min-width: 1025px) {
     .profile-flex {

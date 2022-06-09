@@ -101,12 +101,30 @@ function scroll_effect() {
 });
 
 
+// ＝＝＝＝＝＝＝＝＝＝
+// fav-swiperここから
+// ＝＝＝＝＝＝＝＝＝＝
+
+var favswiper = new Swiper(".fav-swiper", {
+	effect: "cube",
+	grabCursor: true,
+	loop: true,
+	cubeEffect: {
+	  shadow: false,
+	  slideShadows: false,
+	},
+	pagination: {
+	  el: ".swiper-pagination",
+	},
+  });
+
+
 //＝＝＝＝＝＝＝＝＝＝
-//swiperここから
+//skill-swiperここから
 //＝＝＝＝＝＝＝＝＝＝
 
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".skill-swiper", {
   effect: "coverflow",
   loop:"true",
   grabCursor: true,
