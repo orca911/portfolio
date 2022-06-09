@@ -228,7 +228,7 @@ profile
 .profile-name,
 .profile-title {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-bottom: 3px solid;
 }
 
@@ -263,6 +263,10 @@ profile
 }
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝favorite＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
+
+.fav-swiper{
+    width: 90% !important;
+}
 
 .favorite-items{
     text-align: center;
