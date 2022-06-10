@@ -6,14 +6,13 @@
 
 //ヒーローイメージ高さの取得
 
-$(document).ready(function () {
-	var windowHeight = $(window).height();
-	$(".vegas-slider").height(windowHeight);
-  });
-  $(window).resize(function () {
-	var windowHeight = $(window).height();
-	$(".vegas-slider").height(windowHeight);
-  });
+const setVh = () => {
+	const vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+   
+  window.addEventListener('load', setVh);
+  window.addEventListener('resize', setVh);
 
 
 //SP-PCで読み込む画像の設定
@@ -34,7 +33,6 @@ var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0
 			];
 		}
 
-		
 	//vegas効果指定。
 
 $(function () {
