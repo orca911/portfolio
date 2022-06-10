@@ -4,6 +4,19 @@
 //vegasここから
 //＝＝＝＝＝＝＝＝＝
 
+//ヒーローイメージ高さの取得
+
+$(document).ready(function () {
+	var windowHeight = $(window).height();
+	$(".vegas-slider").height(windowHeight);
+  });
+  $(window).resize(function () {
+	var windowHeight = $(window).height();
+	$(".vegas-slider").height(windowHeight);
+  });
+
+
+//SP-PCで読み込む画像の設定
 
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 1025){
@@ -20,6 +33,9 @@ var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0
 				{ src: 'images/sp-vegas/SPmain3.jpg'}
 			];
 		}
+
+		
+	//vegas効果指定。
 
 $(function () {
 	$('#vegas').vegas({
