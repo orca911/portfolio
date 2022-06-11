@@ -274,6 +274,10 @@ profile
     margin-bottom: 50px;
 }
 
+.favorite-img{
+    border-radius: 50px;
+}
+
 @media (min-width: 1025px) {
     .profile-flex {
         display: flex;
