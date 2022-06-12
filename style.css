@@ -30,13 +30,15 @@ a {
 
 h1 {
     font-family: 'Nothing You Could Do', cursive;
+        font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
+
 }
 
 .sec-title {
     font-size: 3rem;
     width: min-content;
-    margin: 0 auto 50px;
-    padding-top: 60px;
+    margin: 0 auto 4rem;
+    padding-top: 4rem;
     color: #0481A2;
     border-bottom: #0481A2 solid 5px;
     font-family: 'Nothing You Could Do', cursive;
@@ -48,7 +50,7 @@ h3 {
     margin-bottom: 30px;
 }
 
-h4{
+h4 {
     font-size: clamp(14px, 3.6vw, 24px);
 }
 
@@ -74,6 +76,7 @@ section {
     .pc {
         display: block;
     }
+
     .wrapper {
         width: 90%;
     }
@@ -132,8 +135,6 @@ section {
 
 .nav__list {
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
 }
 
 .nav__item {
@@ -179,6 +180,50 @@ section {
     /*X方向にスケール拡大*/
 }
 
+@media (min-width: 1025px) {
+    .header {
+        justify-content: space-between;
+        height: 100px;
+        opacity: 1;
+        color: #fff;
+    }
+
+    .title{
+        opacity: 0;
+        visibility: hidden;
+        margin-left: 2rem;
+    }
+
+    .pc-nav{
+        margin-right: 2rem;
+    }
+
+    .nav__link {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .header.active {
+        animation: none;
+    }
+    .header.active .title {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header.active a {
+        color: #999;
+    }
+
+    .pc-nav {
+        display: block;
+    }
+
+    .openbtn {
+        display: none;
+    }
+}
+
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝ファーストビューvegas＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
 
 .vegas-slider {
@@ -209,7 +254,7 @@ profile
     position: relative;
 }
 
-.profile-img img{
+.profile-img img {
     border-radius: 50px;
 }
 
@@ -224,7 +269,7 @@ profile
     box-shadow: 0 40px 15px rgba(0, 0, 0, .5);
     background-color: transparent;
     border-radius: 80px / 4px;
-  }
+}
 
 .profile-name,
 .profile-title {
@@ -238,7 +283,7 @@ profile
     margin-left: 5px;
 }
 
-.profile-textbox{
+.profile-textbox {
     margin-bottom: 50px;
 }
 
@@ -265,17 +310,28 @@ profile
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝favorite＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
 
-.fav-swiper{
+.fav-swiper {
     width: 90% !important;
 }
 
-.favorite-items{
+.favorite-items {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.favorite-img{
+.favorite-img {
     border-radius: 50px;
+}
+
+.favrite-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+}
+
+.favrite-flexbox .favorite-items {
+    width: 40%;
 }
 
 @media (min-width: 1025px) {
@@ -299,7 +355,7 @@ profile
 skill
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝「 */
 
-.swiper{
+.swiper {
     padding: 4px;
     width: 100%;
     overflow: hidden;
@@ -344,6 +400,7 @@ skill
 }
 
 @media (min-width: 601px) {
+
     .code-block,
     .design-block,
     .office-block {
