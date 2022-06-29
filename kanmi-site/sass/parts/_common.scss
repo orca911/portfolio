@@ -1,0 +1,72 @@
+@use"variables"as v;
+
+
+body {
+    font-family: v.$sippori;
+    color: v.$fontColor;
+}
+
+* {
+    font-weight: normal;
+    font-family: 'Shippori Mincho', serif;
+}
+
+.inner {
+    max-width: 1280px;
+    width: 89.333333%;
+    margin: 0 auto;
+}
+
+img {
+    vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: v.$fontColor;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+section{
+    margin-bottom: 5rem;
+    @media (min-width: 768px) {
+        margin-bottom: 15rem;    }
+}
+
+.sec-title {
+    font-size: clamp(1.5rem, 0.974rem + 2.24vw, 3.75rem)
+}
+
+.accent-color {
+    color: v.$accentColor;
+}
+
+.main-color {
+    background-color: v.$mainColor;
+}
+
+/* ボタン */
+.btn {
+    display: inline-block;
+    border-radius: 100vh;
+    box-shadow: v.$menu-boxshadow;
+    font-size: clamp(1.125rem, 0.921rem + 0.87vw, 2rem);
+    padding: 8px 16px;
+    transition: background-color 1s, transform .5s;
+
+    @media (min-width: 768px) {
+        padding: 16px 32px;
+    }
+}
+
+.btn:hover {
+    background-color: v.$accentColor;
+    box-shadow: none;
+    transform: translateY(5px);
+}

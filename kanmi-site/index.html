@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甘美処</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <!-- ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- vegas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.css" integrity="sha512-EpEnw81J0OHvzW6IJBk6U57oNffOy3voB5MasxdZTB2B6st6qEL38R/gVWYc7wMOcgqb3de8Vs6iqZkSlTHlEg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 自作CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__title"><a href="index.html">甘<span class="accent-color">美</span>処</a></h1>
+
+        <nav class="header__pcnav">
+            <ul class="header__pcnav-list">
+                <li class="header__pcnav-item"><a class="header__pcnav-link" href="#">profile</a></li>
+                <li class="header__pcnav-item"><a class="header__pcnav-link" href="#">skill</a></li>
+                <li class="header__pcnav-item"><a class="header__pcnav-link" href="#">works</a></li>
+                <li class="header__pcnav-item"><a class="header__pcnav-link" href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="header__gnav">
+            <ul class="header__gnav-list">
+                <li class="header__gnav-list"><a class="header__gnav-link" href="#profile">profile</a></li>
+                <li class="header__gnav-list"><a class="header__gnav-link" href="#skill">skill</a></li>
+                <li class="header__gnav-list"><a class="header__gnav-link" href="#works">works</a></li>
+                <li class="header__gnav-list"><a class="header__gnav-link" href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="openbtn">
+        <div class="openbtn__area"><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="vegas-slider" id="vegas">
+        <p class="bg-title">甘味で、<br><span class="accent-color">美しく。</span></p>
+    </div>
+
+    <section class="about">
+        <div class="inner">
+            <h2 class="sec-title">和菓子で、<span class="accent-color">キレイ</span>になる。</h2>
+
+            <div class="about__caption imgright">
+                <p class="about__text">季節をモチーフにした、<br>見るだけで楽しい和菓子。</p>
+                <div class="swiper mySwiper about__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="about__imgbox swiper-slide"><img src="about-swiper/spring-wagasi.jpg" alt="春を感じる、桜色の練り切り。"></div>
+                        <div class="about__imgbox swiper-slide"><img src="about-swiper/summer-wagasi.jpg" alt="夏に冷たい、透明感のある寒天。"></div>
+                        <div class="about__imgbox swiper-slide"><img src="about-swiper/autumn-wagasi.jpg" alt="秋に染まる、紅葉饅頭。"></div>
+                        <div class="about__imgbox swiper-slide"><img src="about-swiper/winter-wagasi.jpg" alt="冬を楽しむ、苺大福。"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__caption imgleft">
+                <p class="about__text">大豆、寒天に含まれた<br>食物繊維などの栄養素</p>
+                <div class="about__imgbox"><img src="about-swiper/summer-wagasi.jpg" alt="春を感じる、桜色の練り切り。"></div>
+            </div>
+
+            <h2 class="sec-title">和菓子の魅力で、<br>あなたの身も心も<span class="accent-color">キレイ</span>に。</h2>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="inner">
+            <h2 class="sec-title menu__color decoration">季節限定メニュー</h2>
+
+            <figure class="menu__item">
+                <img src="menu/manju.jpg" alt="ひんやり冷たい、水饅頭　～清夏～。" class="menu__img">
+                <figcaption class="menu__textbox">
+                    <p class="menu__caption-text decoration">水饅頭　～清夏～</p>
+                    <p class="menu__caption-value">価格：　xxx円（税込）</p>
+                    <p class="menu__caption-caption">涼しげな透明感と<br>柔らかな歯ごたえ。<br>糖質も抑えてあります。</p>
+                </figcaption>
+            </figure>
+
+            <figure class="menu__item">
+                <img src="menu/agar.jpg" alt="ぷるんとのどごし、寒天　～涼夏～。" class="menu__img">
+                <figcaption class="menu__textbox">
+                    <p class="menu__caption-text decoration">寒天　～涼夏～</p>
+                    <p class="menu__caption-value">価格：　xxx円（税込）</p>
+                    <p class="menu__caption-caption">涼しげな透明感と<br>柔らかな歯ごたえ。<br>糖質も抑えてあります。</p>
+                </figcaption>
+            </figure>
+
+            <figure class="menu__item">
+                <img src="menu/ice.jpg" alt="夏はやっぱり、かき氷　～冷夏～。" class="menu__img">
+                <figcaption class="menu__textbox">
+                    <p class="menu__caption-text decoration">かき氷　～冷夏～</p>
+                    <p class="menu__caption-value">価格：　xxx円（税込）</p>
+                    <p class="menu__caption-caption">涼しげな透明感と<br>柔らかな歯ごたえ。<br>糖質も抑えてあります。</p>
+                </figcaption>
+            </figure>
+
+            <p class="menu__btn-space">
+                <a href="#" class="btn">商品ページへ</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="acces">
+        <div class="inner">
+            <h2 class="sec-title decoration">アクセス</h2>
+            <p class="acces__title">公共交通機関</p>
+            <p class="acces__text">テキストテキストテキストテキスト<br>テキストテキストテキストテキスト</p>
+
+            <h2 class="sec-title decoration">アクセス</h2>
+            <p class="payment_text">代金引換、クレジットカード払いをご用意しております。<br>
+                お客様のご希望に合わせて各種ご利用ください。</p>
+            <p class="payment_text">クレジットカード決済は、<br>
+                VISA、MasterCard、JCB、AmericanExpress、<br>
+                Diners、Nicos、UFJ、DCがご利用可能となっております。</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__shop-name">甘<span class="accent-color">美</span>処</p>
+        <p class="busoness-time">営業時間　<time>9:00～19:00</time></p>
+        <p class="footer__tel">TEL　<a href="">###-####-####</a></p>
+
+        <ul class="footer__sns-list">
+            <li class="footer__sns-item"><a href="#" class="footer__sns-link"><img src="footer-sns/instagram.svg" alt="instagramへ飛びます。" class="footer__sns-img"></a></li>
+            <li class="footer__sns-item"><a href="#" class="footer__sns-link"><img src="footer-sns/twitter.svg" alt="twitterへ飛びます。" class="footer__sns-img"></a></li>
+            <li class="footer__sns-item"><a href="#" class="footer__sns-link"><img src="footer-sns/facebook.svg" alt="facebookへ飛びます。" class="footer__sns-img"></a></li>
+        </ul>
+
+        <p class="footer__copylight main-color">&copy2022&nbsp甘美処All&nbspRights&nbspRegerred</p>
+    </footer>
+
+</body>
+
+</html>

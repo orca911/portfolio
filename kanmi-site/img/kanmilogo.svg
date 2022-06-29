@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_イヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 196.00049 501.69824">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-1);
+        font-family: HGPGyoshotai, HGPGyoshotai;
+        font-size: 142.94484px;
+        glyph-orientation-vertical: 0deg;
+        text-orientation: upright;
+        writing-mode: tb;
+      }
+
+      .cls-2 {
+        font-family: 'AB_shinyubipenjigyosyotai-90ms-RKSJ-H', AB_shinyubipenjigyosyotai;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #333;
+      }
+
+      .cls-4 {
+        font-size: 48px;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #ffc7ff;
+      }
+
+      .cls-6 {
+        font-size: 52px;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_イヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <text class="cls-1" transform="translate(98.0001 8.10989)"><tspan class="cls-3" x="0" y="0">甘</tspan><tspan class="cls-5" x="0" y="142.94531">美</tspan><tspan class="cls-3" x="0" y="285.88965">処</tspan></text>
+      <text class="cls-2" transform="translate(-.0002 488.33398)"><tspan class="cls-4" x="0" y="0">-あま</tspan><tspan class="cls-6" x="120.00049" y="0">み</tspan><tspan class="cls-4" x="172.00049" y="0">-</tspan></text>
+    </g>
+  </g>
+</svg>

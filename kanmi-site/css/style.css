@@ -1,0 +1,75 @@
+@charset "UTF-8";
+body {
+  font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  color: #999999;
+}
+
+* {
+  font-weight: normal;
+  font-family: "Shippori Mincho", serif;
+}
+
+.inner {
+  max-width: 1280px;
+  width: 89.333333%;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #999999;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 15rem;
+  }
+}
+
+.sec-title {
+  font-size: clamp(1.5rem, 0.974rem + 2.24vw, 3.75rem);
+}
+
+.accent-color {
+  color: #FFAFFA;
+}
+
+.main-color {
+  background-color: #CCFFFF;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  border-radius: 100vh;
+  box-shadow: 0 10px 30px rgba 0, 0, 0, 0.0625;
+  font-size: clamp(1.125rem, 0.921rem + 0.87vw, 2rem);
+  padding: 8px 16px;
+  transition: background-color 1s, transform 0.5s;
+}
+@media (min-width: 768px) {
+  .btn {
+    padding: 16px 32px;
+  }
+}
+
+.btn:hover {
+  background-color: #FFAFFA;
+  box-shadow: none;
+  transform: translateY(5px);
+}
+/*# sourceMappingURL=style.css.map */
