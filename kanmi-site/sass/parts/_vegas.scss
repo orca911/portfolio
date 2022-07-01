@@ -1,0 +1,25 @@
+@use"variables"as v;
+
+#vegas {
+    width: 100%;
+    height: 55vh;
+    background-size: cover;
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.bg-title {
+    font-size:clamp(2rem, 1.046rem + 4.07vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: 8px;
+    color:  #fff;
+    text-shadow: v.$text-shadow;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 36%;
+    right: 9.6%;
+
+    .accent-color{
+        padding-top: 2rem;
+    }
+}
