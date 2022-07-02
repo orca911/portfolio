@@ -193,4 +193,15 @@ section {
   font-size: 0.825rem;
   margin-bottom: 1.5rem;
 }
+
+.access .sec-title {
+  font-size: clamp(1.5rem, 0.974rem + 2.24vw, 3.75rem);
+  margin-bottom: 1.125rem;
+}
+.access__title {
+  margin-bottom: 0.75rem;
+}
+.access__text {
+  line-height: 1.8;
+}
 /*# sourceMappingURL=style.css.map */

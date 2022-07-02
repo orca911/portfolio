@@ -1,0 +1,16 @@
+@use"../parts/variables"as v;
+
+.access{
+    .sec-title{
+        font-size: clamp(1.5rem, 0.974rem + 2.24vw, 3.75rem);
+        margin-bottom: 1.125rem;
+    }
+
+    &__title{
+        margin-bottom: 0.750rem;
+    }
+
+    &__text{
+        line-height: v.$line-h;
+    }
+}
