@@ -239,6 +239,5 @@ section {
 .footer__copylight {
   font-size: clamp(0.75rem, 0.629rem + 0.52vw, 1.25rem);
   padding: 1.375rem 0;
-  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
