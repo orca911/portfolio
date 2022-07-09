@@ -83,17 +83,6 @@ section {
   transform: translateY(5px);
 }
 
-.header {
-  text-align: center;
-}
-.header__title {
-  font-size: 1.5rem;
-  padding: 12px 0;
-}
-.header__pcnav {
-  display: none;
-}
-
 #vegas {
   width: 100%;
   height: 55vh;
@@ -108,14 +97,24 @@ section {
   letter-spacing: 8px;
   color: #fff;
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.48);
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   position: absolute;
   top: 36%;
   right: 9.6%;
 }
 .bg-title .accent-color {
   padding-top: 2rem;
+}
+
+.header {
+  text-align: center;
+}
+.header__title {
+  font-size: 1.5rem;
+  padding: 12px 0;
+}
+.header__pcnav {
+  display: none;
 }
 
 .about .sec-title {
@@ -194,14 +193,52 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.access {
+  font-size: clamp(0.75rem, 0.629rem + 0.52vw, 1.25rem);
+}
 .access .sec-title {
-  font-size: clamp(1.5rem, 0.974rem + 2.24vw, 3.75rem);
+  font-size: clamp(1.5rem, 1.379rem + 0.52vw, 2rem);
   margin-bottom: 1.125rem;
 }
 .access__title {
   margin-bottom: 0.75rem;
 }
 .access__text {
+  line-height: 3;
+  margin-bottom: 3rem;
+}
+.access .payment_text {
   line-height: 1.8;
+}
+.access .payment_text:nth-of-type(3) {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: clamp(0.875rem, 0.784rem + 0.39vw, 1.25rem);
+}
+.footer__shop-about {
+  margin-bottom: 1.75rem;
+}
+.footer__shop-about p {
+  margin-bottom: 0.75rem;
+}
+.footer__shop-name {
+  font-size: clamp(2rem, 1.575rem + 1.81vw, 3.75rem);
+}
+.footer__sns-list {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1.75rem;
+}
+.footer__sns-item {
+  width: 20%;
+}
+.footer__copylight {
+  font-size: clamp(0.75rem, 0.629rem + 0.52vw, 1.25rem);
+  padding: 1.375rem 0;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

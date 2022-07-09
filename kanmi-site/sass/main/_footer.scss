@@ -1,0 +1,33 @@
+@use"../parts/variables"as v;
+
+.footer{
+    text-align: center;
+    font-size: clamp(0.875rem, 0.784rem + 0.39vw, 1.25rem);
+
+    &__shop-about{
+        margin-bottom: 1.75rem;
+        p{
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    &__shop-name{
+        font-size: clamp(2rem, 1.575rem + 1.81vw, 3.75rem);
+    }
+
+    &__sns-list{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 1.75rem;
+    }
+    &__sns-item{
+        width: 20%;
+    }
+
+    &__copylight{
+        font-size: clamp(0.75rem, 0.629rem + 0.52vw, 1.25rem);
+        padding: 1.375rem 0;
+        color: #fff;
+    }
+}
