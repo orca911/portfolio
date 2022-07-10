@@ -1,6 +1,5 @@
 'use strict';
 
-
 //vegas効果指定。
 
 $(function () {
@@ -17,4 +16,15 @@ $(function () {
 		animationDuration: 20000, //スライドアニメーション時間をミリ秒単位で設定
 		timer: false, // プログレスバー
 	});
+});
+
+// header__g-nav
+$(".openbtn").click(function () {//ボタンがクリックされたら
+	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $("#header__gnav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+});
+
+$("#header__gnav a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+    $("#header__gnav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });

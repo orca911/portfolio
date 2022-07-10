@@ -39,31 +39,38 @@
             </ul>
         </nav>
 
-        <nav id="header__gnav">
-            <ul class="header__gnav-list">
-                <li class="header__gnav-list"><a class="header__gnav-link" href="#profile">profile</a></li>
-                <li class="header__gnav-list"><a class="header__gnav-link" href="#skill">skill</a></li>
-                <li class="header__gnav-list"><a class="header__gnav-link" href="#works">works</a></li>
-                <li class="header__gnav-list"><a class="header__gnav-link" href="#contact">contact</a></li>
+        <nav class="header__gnav" id="header__gnav">
+            <ul class="header__gnav-list" id="header__gnav-list">
+                <li class="header__gnav-list"><a class="header__gnav-link" href="">当店について</a></li>
+                <li class="header__gnav-list"><a class="header__gnav-link" href="">商品一覧</a></li>
+                <li class="header__gnav-list"><a class="header__gnav-link" href="">アクセス</a></li>
+                <li class="header__gnav-list"><a class="header__gnav-link" href="">お問い合わせ</a></li>
             </ul>
         </nav>
-
     </header>
 
     <div class="openbtn">
-        <div class="openbtn__area"><span></span><span></span><span></span></div>
+        <span></span><span></span><span></span>
     </div>
 
-    <div class="vegas-slider" id="vegas">
-        <p class="bg-title">甘味で、<br class="pc-none"><span class="accent-color">美しく。</span></p>
+
+    <div class="bg-img">
+        <div class="vegas-slider" id="vegas">
+            <p class="bg-title">甘味で、<br class="pc-none"><span class="accent-color">美しく。</span></p>
+        </div>
     </div>
+
+    <!-- 
+        =====about=====
+     -->
 
     <section class="about">
         <div class="inner">
             <h2 class="sec-title">和菓子で、<span class="accent-color">キレイ</span>になる。</h2>
 
             <div class="about__caption imgright">
-                <p class="about__text left">季節をモチーフにした、<br>見るだけで楽しい和菓子。</p>
+                <p class="about__text left">春、夏、秋、冬…<br>
+                    四季をモチーフにした、<br>見るだけで楽しい和菓子。</p>
                 <div class="swiper mySwiper about__swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="about-swiper/spring-wagasi.jpg" alt="春を感じる、桜色の練り切り。"></div>
@@ -83,40 +90,48 @@
         </div>
     </section>
 
+    <!-- 
+        =====menu=====
+     -->
+
     <section class="menu">
         <div class="inner">
             <h2 class="sec-title decoration">季節限定メニュー</h2>
 
-            <figure class="menu__item">
-                <img src="menu/manju.jpg" alt="ひんやり冷たい、水饅頭　～清夏～。" class="menu__img">
-                <figcaption class="menu__textbox">
-                    <p class="menu__caption-text decoration">水饅頭　～清夏～</p>
-                    <p class="menu__caption-value">価格：　xxx円（税込）</p>
-                    <p class="menu__caption-caption">涼しげな透明感と<br>柔らかな歯ごたえ。<br>糖質も抑えてあります。</p>
-                </figcaption>
-            </figure>
-
-            <figure class="menu__item">
-                <img src="menu/agar.jpg" alt="ぷるんとのどごし、寒天　～涼夏～。" class="menu__img">
-                <figcaption class="menu__textbox">
-                    <p class="menu__caption-text decoration">寒天　～涼夏～</p>
-                    <p class="menu__caption-value">価格：　xxx円（税込）</p>
-                    <p class="menu__caption-caption">涼しげな透明感と<br>柔らかな歯ごたえ。<br>糖質も抑えてあります。</p>
-                </figcaption>
-            </figure>
-
-            <figure class="menu__item">
-                <img src="menu/ice.jpg" alt="夏はやっぱり、かき氷　～冷夏～。" class="menu__img">
-                <figcaption class="menu__textbox">
-                    <p class="menu__caption-text decoration">かき氷　～冷夏～</p>
-                    <p class="menu__caption-value">価格：　xxx円（税込）</p>
-                    <p class="menu__caption-caption">涼しげな透明感と<br>柔らかな歯ごたえ。<br>糖質も抑えてあります。</p>
-                </figcaption>
-            </figure>
+            <div class="menu__itembox">
+                <figure class="menu__item">
+                    <img src="menu/manju.jpg" alt="ひんやり冷たい、水饅頭　～清夏～。" class="menu__img">
+                    <figcaption class="menu__textbox">
+                        <p class="menu__caption-text decoration">水饅頭　～清夏～</p>
+                        <p class="menu__caption-value">価格：　xxx円（税込）</p>
+                        <p class="menu__caption-caption">涼しげな透明感と<br>柔らかな歯ごたえ。<br>糖質も抑えてあります。</p>
+                    </figcaption>
+                </figure>
+                <figure class="menu__item">
+                    <img src="menu/agar.jpg" alt="ぷるんとのどごし、寒天　～涼夏～。" class="menu__img">
+                    <figcaption class="menu__textbox">
+                        <p class="menu__caption-text decoration">寒天　～涼夏～</p>
+                        <p class="menu__caption-value">価格：　xxx円（税込）</p>
+                        <p class="menu__caption-caption">涼しげな透明感と<br>柔らかな歯ごたえ。<br>糖質も抑えてあります。</p>
+                    </figcaption>
+                </figure>
+                <figure class="menu__item">
+                    <img src="menu/ice.jpg" alt="夏はやっぱり、かき氷　～冷夏～。" class="menu__img">
+                    <figcaption class="menu__textbox">
+                        <p class="menu__caption-text decoration">かき氷　～冷夏～</p>
+                        <p class="menu__caption-value">価格：　xxx円（税込）</p>
+                        <p class="menu__caption-caption">涼しげな透明感と<br>柔らかな歯ごたえ。<br>糖質も抑えてあります。</p>
+                    </figcaption>
+                </figure>
+            </div>
 
             <a href="#" class="btn">商品ページへ</a>
         </div>
     </section>
+
+    <!-- 
+        =====access=====
+     -->
 
     <section class="access">
         <div class="inner">
@@ -132,6 +147,10 @@
                 Diners、Nicos、UFJ、DCがご利用可能となっております。</p>
         </div>
     </section>
+
+    <!-- 
+        =====footer=====
+     -->
 
     <footer class="footer">
         <div class="inner">
@@ -152,10 +171,12 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!-- vegas -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js" integrity="sha512-lYAcY5E6LZVeNB3Pky37SxbYKzo8A68MzKFoPg5oTuolhRm36D+YRvkrAQS4JuKsaGYeJ5KA5taMEtpNlPUeOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- swiper.js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 動くwebデザイン.js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- vegas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js" integrity="sha512-lYAcY5E6LZVeNB3Pky37SxbYKzo8A68MzKFoPg5oTuolhRm36D+YRvkrAQS4JuKsaGYeJ5KA5taMEtpNlPUeOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- 自作JS -->
     <script src="script.js"></script>
 

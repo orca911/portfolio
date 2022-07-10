@@ -35,13 +35,13 @@ li {
 }
 
 section{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     @media (min-width: 768px) {
-        margin-bottom: 15rem;    }
+        margin-bottom: 6rem;}
 }
 
 .sec-title {
-    font-size: clamp(1.5rem, 0.974rem + 2.24vw, 3.75rem)
+    font-size: clamp(1.5rem, 1.379rem + 0.52vw, 2rem);
 }
 
 .accent-color {
@@ -64,13 +64,9 @@ section{
     width: max-content;
     margin: 0 auto;
     box-shadow: v.$menu-boxshadow;
-    font-size: clamp(1.125rem, 0.921rem + 0.87vw, 2rem);
+    font-size: clamp(1rem, 0.939rem + 0.26vw, 1.25rem);
     padding: 8px 16px;
     transition: background-color 1s, transform .5s;
-
-    @media (min-width: 768px) {
-        padding: 16px 32px;
-    }
 }
 
 .btn:hover {

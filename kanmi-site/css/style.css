@@ -33,16 +33,16 @@ li {
 }
 
 section {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 @media (min-width: 768px) {
   section {
-    margin-bottom: 15rem;
+    margin-bottom: 6rem;
   }
 }
 
 .sec-title {
-  font-size: clamp(1.5rem, 0.974rem + 2.24vw, 3.75rem);
+  font-size: clamp(1.5rem, 1.379rem + 0.52vw, 2rem);
 }
 
 .accent-color {
@@ -67,20 +67,19 @@ section {
   width: max-content;
   margin: 0 auto;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  font-size: clamp(1.125rem, 0.921rem + 0.87vw, 2rem);
+  font-size: clamp(1rem, 0.939rem + 0.26vw, 1.25rem);
   padding: 8px 16px;
   transition: background-color 1s, transform 0.5s;
-}
-@media (min-width: 768px) {
-  .btn {
-    padding: 16px 32px;
-  }
 }
 
 .btn:hover {
   background-color: #FFAFFA;
   box-shadow: none;
   transform: translateY(5px);
+}
+
+.bg-img {
+  padding-top: 60px;
 }
 
 #vegas {
@@ -108,6 +107,14 @@ section {
 
 .header {
   text-align: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  /*========= ナビゲーションのためのCSS ===============*/
+  /*アクティブクラスがついたら位置を0に*/
+  /*ナビゲーション*/
+  /*リストのレイアウト設定*/
 }
 .header__title {
   font-size: 1.5rem;
@@ -116,13 +123,112 @@ section {
 .header__pcnav {
   display: none;
 }
+.header__gnav {
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: fixed;
+  z-index: 20;
+  /*ナビのスタート位置と形状*/
+  top: 0;
+  right: -120%;
+  width: 100%;
+  height: 100vh;
+  /*ナビの高さ*/
+  background: #fff;
+  /*動き*/
+  transition: all 0.6s;
+}
+.header__gnav.panelactive {
+  right: 0;
+}
+.header__gnav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__gnav li {
+  list-style: none;
+  text-align: center;
+}
+.header__gnav li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
 
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn {
+  /*ボタン内側の基点となるためrelativeを指定。
+  追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  z-index: 50;
+}
+
+/*ボタン内側*/
+.openbtn span {
+  display: inline-block;
+  transition: all 0.4s;
+  /*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 2px;
+  border-radius: 2px;
+  background: #999999;
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn span:nth-of-type(3) {
+  top: 31px;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+  /*真ん中の線は透過*/
+}
+
+.openbtn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+.about .inner {
+  max-width: 1000px;
+}
 .about .sec-title {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
-  text-align: center;
 }
 .about .sec-title:first-of-type {
   margin-bottom: 1.5rem;
@@ -136,13 +242,13 @@ section {
 .about__text {
   width: 50%;
   background: rgba(255, 255, 255, 0.6);
-  font-size: clamp(0.75rem, 0.224rem + 2.24vw, 3rem);
+  font-size: clamp(0.75rem, 0.538rem + 0.91vw, 1.625rem);
   white-space: nowrap;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
+  z-index: 5;
   padding: 8px 0 8px 16px;
 }
 .about .left {
@@ -166,30 +272,37 @@ section {
 
 .menu {
   background: linear-gradient(to bottom, #99FFFF, #AAFFFF, #CCFFFF);
-  padding: 0.5rem 0 3rem;
+  padding: 1.5rem 0 3rem;
 }
 .menu .sec-title {
   color: #FFF;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   margin-bottom: 2rem;
 }
+@media (min-width: 1000px) {
+  .menu__itembox {
+    display: flex;
+    gap: 3.75rem;
+  }
+}
 .menu__item {
+  font-size: 1.125rem;
   background: #FFF;
   text-align: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  margin-bottom: 3rem;
-  font-size: 1.125rem;
-  padding-bottom: 1rem;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  padding-bottom: 2rem;
 }
 .menu__img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   margin-bottom: 1.5rem;
 }
 .menu__caption-text {
-  margin-bottom: 0.875rem;
+  margin-bottom: 1rem;
 }
 .menu__caption-value {
-  font-size: 0.825rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -197,7 +310,6 @@ section {
   font-size: clamp(0.75rem, 0.629rem + 0.52vw, 1.25rem);
 }
 .access .sec-title {
-  font-size: clamp(1.5rem, 1.379rem + 0.52vw, 2rem);
   margin-bottom: 1.125rem;
 }
 .access__title {

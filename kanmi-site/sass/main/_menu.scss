@@ -1,35 +1,43 @@
 @use"../parts/variables"as v;
 
-.menu{
-    background: linear-gradient(to bottom,#99FFFF,#AAFFFF,#CCFFFF);
-    padding: 0.5rem 0 3rem;
+.menu {
+    background: linear-gradient(to bottom, #99FFFF, #AAFFFF, #CCFFFF);
+    padding: 1.5rem 0 3rem;
 
-    .sec-title{
+    .sec-title {
         color: #FFF;
         text-shadow: v.$menu-boxshadow;
         margin-bottom: 2rem;
     }
 
-    &__item{
+    &__itembox {
+        @media (min-width: 1000px) {
+            display: flex;
+            gap: 3.75rem;
+        }
+    }
+
+    &__item {
+        font-size: 1.125rem;
         background: #FFF;
         text-align: center;
         box-shadow: v.$menu-boxshadow;
-        margin-bottom: 3rem;
-        font-size: 1.125rem;
-        padding-bottom: 1rem;
+        max-width: 500px;
+        margin: 0 auto 3rem;
+        padding-bottom: 2rem;
     }
-    &__img{
+
+    &__img {
         box-shadow: v.$menu-boxshadow;
         margin-bottom: 1.5rem;
     }
 
-    &__caption-text{
-        margin-bottom: .875rem;
+    &__caption-text {
+        margin-bottom: 1rem;
     }
 
-    &__caption-value{
-        font-size: .825rem;
+    &__caption-value {
+        font-size: 1rem;
         margin-bottom: 1.5rem;
     }
-
 }

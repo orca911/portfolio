@@ -2,10 +2,13 @@
 
 .about{
 
+    .inner{
+        max-width: 1000px;
+    }
+
     .sec-title{
         width: max-content;
         margin: 0 auto;
-        text-align: center;
 
         &:first-of-type{
             margin-bottom: 1.5rem;
@@ -23,13 +26,13 @@
     &__text{
         width: 50%;
         background: rgba(255,255,255,.6);
-        font-size: clamp(0.75rem, 0.224rem + 2.24vw, 3rem);
+        font-size: clamp(0.75rem, 0.538rem + 0.91vw, 1.625rem);
         white-space: nowrap;
         box-shadow: v.$menu-boxshadow;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 10;
+        z-index: 5;
         padding: 8px 0 8px 16px;
     }
 

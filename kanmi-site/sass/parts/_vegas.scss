@@ -1,5 +1,10 @@
 @use"variables"as v;
 
+.bg-img {
+    padding-top: 60px;
+
+}
+
 #vegas {
     width: 100%;
     height: 55vh;
@@ -9,17 +14,17 @@
 }
 
 .bg-title {
-    font-size:clamp(2rem, 1.046rem + 4.07vw, 3rem);
+    font-size: clamp(2rem, 1.046rem + 4.07vw, 3rem);
     line-height: 1.1;
     letter-spacing: 8px;
-    color:  #fff;
+    color: #fff;
     text-shadow: v.$text-shadow;
     writing-mode: vertical-rl;
     position: absolute;
     top: 36%;
     right: 9.6%;
 
-    .accent-color{
+    .accent-color {
         padding-top: 2rem;
     }
 }
